@@ -1,7 +1,7 @@
 <template>
   <div class="main-container">
     <div class="main-wrapper">
-      <img src="assets/OMS_logo.svg" alt="" class="main-logo" w="190" h="36" />
+      <img src="/assets/OMS_logo.svg" alt="" class="main-logo" w="190" h="36" />
       <div class="main-texts">
         <h2>{{ $t("lastManStanding") }}</h2>
         <h1>{{ $t("lamborghiniHuracan") }}</h1>
@@ -52,22 +52,22 @@
       </div>
       <button class="main-button">{{ $t("playNow") }}</button>
       <div>
-        <img src="assets/Header_group_OMS.png" alt="" class="main-image" />
+        <img src="/assets/Header_group_OMS.png" alt="" class="main-image" />
       </div>
 
       <div class="steps">
         <h2 class="steps-title">{{ $t("howToWIN") }}</h2>
         <div class="steps-container">
           <div class="step">
-            <nuxt-img src="assets/1.svg" alt="" class="step-image" />
+            <nuxt-img src="/assets/1.svg" alt="" class="step-image" />
             <h2>{{ $t("placeAtLeast") }}</h2>
           </div>
           <div class="step">
-            <nuxt-img src="assets/2.svg" alt="" class="step-image" />
+            <nuxt-img src="/assets/2.svg" alt="" class="step-image" />
             <h2>{{ $t("keepDoingThatUntil") }}</h2>
           </div>
           <div class="step">
-            <nuxt-img src="assets/3.svg" alt="" class="step-image" />
+            <nuxt-img src="/assets/3.svg" alt="" class="step-image" />
             <h2>{{ $t("hopOnThisAmazingLambo") }}</h2>
           </div>
         </div>
@@ -104,8 +104,8 @@
             </swiper-slide>
           </swiper>
           <div class="arrows-container">
-            <nuxt-img src="assets/left-arrow.svg" />
-            <nuxt-img src="assets/right-arrow.svg" />
+            <nuxt-img src="/assets/left-arrow.svg" />
+            <nuxt-img src="/assets/right-arrow.svg" />
           </div>
         </div>
         <vue-easy-lightbox
@@ -117,7 +117,6 @@
 
         <div class="modal-overlay" v-show="showModal">
           <div class="modal">
-            <img class="check" src="~/assets/check-icon.png" alt="" />
             <h6>Saved!</h6>
             <p>Your Details have been saved Successfully</p>
             <button>Go Home</button>
@@ -181,16 +180,16 @@ export default defineComponent({
     };
 
     const imgs = [
-      "assets/poze/a0.jpg",
-      "assets/poze/a1.jpg",
-      "assets/poze/a2.jpg",
-      "assets/poze/a3.jpg",
-      "assets/poze/a4.jpg",
-      "assets/poze/a5.jpg",
-      "assets/poze/a6.jpg",
-      "assets/poze/a7.jpg",
-      "assets/poze/a8.jpg",
-      "assets/poze/a9.jpg",
+      "/assets/poze/a0.jpg",
+      "/assets/poze/a1.jpg",
+      "/assets/poze/a2.jpg",
+      "/assets/poze/a3.jpg",
+      "/assets/poze/a4.jpg",
+      "/assets/poze/a5.jpg",
+      "/assets/poze/a6.jpg",
+      "/assets/poze/a7.jpg",
+      "/assets/poze/a8.jpg",
+      "/assets/poze/a9.jpg",
     ];
     const showImg = (index) => {
       indexRef.value = index;
