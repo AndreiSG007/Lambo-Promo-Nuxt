@@ -117,12 +117,23 @@
 
         <div class="modal-overlay" v-show="showModal">
           <div class="modal">
-            <h6>Saved!</h6>
-            <p>Your Details have been saved Successfully</p>
-            <button>Go Home</button>
-          </div>
-          <div class="close">
-            <button @click="showModal = false">X</button>
+            <h2>{{ $t("termsAndConditions") }}</h2>
+            <p>1.{{ $t("thePromotionStarts") }}</p>
+            <p>2.{{ $t("onceThePromotionStarts") }}</p>
+            <p>3.{{ $t("inOrderToParticipateIn") }}</p>
+            <p>4.{{ $t("missingOneDayOf") }}</p>
+            <p>5.{{ $t("atTheEndOfEachMonth") }}</p>
+            <p>6.{{ $t("theBigPrizeIsA2021") }}</p>
+            <p>7.{{ $t("theWinningPlayerShould") }}</p>
+            <p>8.{{ $t("importTaxesAnd") }}</p>
+            <p>9.{{ $t("ifThePromotionReaches") }}</p>
+            <p>10.{{ $t("theCurrencyEquivalentOf") }}</p>
+            <p>11.{{ $t("aPlayerCanWinTheIphone") }}</p>
+            <p>12.{{ $t("theMinimunAcumulated") }}</p>
+
+            <div class="close">
+              <button @click="showModal = false">X</button>
+            </div>
           </div>
         </div>
 
@@ -211,6 +222,18 @@ export default defineComponent({
       time: newYear - now,
       mySwiper,
     };
+  },
+  watch: {
+    // whenever active changes, this function will run
+    bodyStyle: function () {
+      document.body.style.overflow = showModal ? "hidden" : "";
+    },
+
+    test: function () {
+      if (showModal) {
+        console.log("testt");
+      }
+    },
   },
 });
 </script>
