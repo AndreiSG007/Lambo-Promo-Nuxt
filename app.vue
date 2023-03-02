@@ -85,12 +85,10 @@
 
         <div class="swiper-container">
           <swiper
-            :ref="{ swiperRef }"
             :slidesPerView="2"
             :space-between="20"
             class="gallery-swiper"
             navigation
-            @slideChange="onSlideChange"
             :breakpoints="breakpoints"
             :modules="[Controller]"
             @swiper="setControlledSwiper"
@@ -161,7 +159,7 @@
 <script>
 import { defineComponent } from "vue";
 import VueEasyLightbox from "vue-easy-lightbox";
-import { useSwiper, Swiper, SwiperSlide } from "swiper/vue";
+import { Swiper, SwiperSlide } from "swiper/vue";
 import VueCountdown from "@chenfengyuan/vue-countdown";
 import { Controller } from "swiper";
 
@@ -179,7 +177,6 @@ export default defineComponent({
   setup() {
     const visibleRef = ref(false);
     const indexRef = ref(0);
-    const swiper = useSwiper();
     const showModal = ref(false);
     const mySwiper = ref();
 
