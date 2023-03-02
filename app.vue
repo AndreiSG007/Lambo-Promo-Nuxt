@@ -90,9 +90,10 @@
             :space-between="20"
             class="gallery-swiper"
             navigation
-            @swiper="onSwiper"
             @slideChange="onSlideChange"
             :breakpoints="breakpoints"
+            :modules="[Controller]"
+            @swiper="setControlledSwiper"
           >
             <swiper-slide
               v-for="(src, index) in imgs"
@@ -104,8 +105,12 @@
             </swiper-slide>
           </swiper>
           <div class="arrows-container">
-            <nuxt-img src="/assets/left-arrow.svg" />
-            <nuxt-img src="/assets/right-arrow.svg" />
+            <button @click="controlledSwiper.slidePrev()">
+              <nuxt-img src="/assets/left-arrow.svg" />
+            </button>
+            <button @click="controlledSwiper.slideNext()">
+              <nuxt-img src="/assets/right-arrow.svg" />
+            </button>
           </div>
         </div>
         <vue-easy-lightbox
@@ -158,6 +163,7 @@ import { defineComponent } from "vue";
 import VueEasyLightbox from "vue-easy-lightbox";
 import { useSwiper, Swiper, SwiperSlide } from "swiper/vue";
 import VueCountdown from "@chenfengyuan/vue-countdown";
+import { Controller } from "swiper";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -183,13 +189,13 @@ export default defineComponent({
       },
     };
 
-    const now = new Date("March 22, 2023 15:37:25").getTime();
-    const newYear = new Date("April 5, 2023 15:37:25").getTime();
-
-    const onSwiper = (swiper) => {
-      mySwiper.value = swiper;
+    const controlledSwiper = ref(null);
+    const setControlledSwiper = (swiper) => {
+      controlledSwiper.value = swiper;
     };
 
+    const now = new Date().getTime();
+    const newYear = new Date("April 5, 2023 15:37:25").getTime();
     const imgs = [
       "/assets/poze/a0.jpg",
       "/assets/poze/a1.jpg",
@@ -207,7 +213,6 @@ export default defineComponent({
       visibleRef.value = true;
     };
 
-    console.log(swiper);
     const onHide = () => (visibleRef.value = false);
 
     return {
@@ -216,24 +221,14 @@ export default defineComponent({
       imgs,
       showImg,
       onHide,
-      onSwiper,
       showModal,
       breakpoints,
       time: newYear - now,
       mySwiper,
+      Controller,
+      controlledSwiper,
+      setControlledSwiper,
     };
-  },
-  watch: {
-    // whenever active changes, this function will run
-    bodyStyle: function () {
-      document.body.style.overflow = showModal ? "hidden" : "";
-    },
-
-    test: function () {
-      if (showModal) {
-        console.log("testt");
-      }
-    },
   },
 });
 </script>
