@@ -393,11 +393,11 @@ a {
       margin-bottom: 20px;
       width: calc(100vw - 40px);
       max-width: 630px;
-      min-height: 196px;
+      min-height: 180px;
 
       @include mq(600px)
       {
-        height: 372px;
+        height: 354px;
         margin-bottom: 40px;
       }
     }
