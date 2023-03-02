@@ -1,7 +1,13 @@
 <template>
   <div class="main-container">
     <div class="main-wrapper">
-      <img src="/assets/OMS_logo.svg" alt="" class="main-logo" w="190" h="36" />
+      <nuxt-img
+        src="/assets/OMS_logo.svg"
+        alt=""
+        class="main-logo"
+        w="190"
+        h="36"
+      />
       <div class="main-texts">
         <h2>{{ $t("lastManStanding") }}</h2>
         <h1>{{ $t("lamborghiniHuracan") }}</h1>
@@ -52,7 +58,12 @@
       </div>
       <button class="main-button">{{ $t("playNow") }}</button>
       <div>
-        <img src="/assets/Header_group_OMS.png" alt="" class="main-image" />
+        <nuxt-img
+          src="/assets/Header_group_OMS.png"
+          format="webp"
+          alt=""
+          class="main-image"
+        />
       </div>
 
       <div class="steps">
