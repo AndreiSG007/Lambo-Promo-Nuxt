@@ -15,6 +15,18 @@ declare module 'nuxt/schema' {
 
       cdnURL: string,
    },
+
+   ipx: {
+      dir: string,
+
+      maxAge: any,
+
+      domains: Array<any>,
+
+      sharp: any,
+
+      alias: any,
+   },
   }
   interface PublicRuntimeConfig {
 
