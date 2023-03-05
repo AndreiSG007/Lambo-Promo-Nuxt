@@ -9,6 +9,7 @@ export default defineNuxtConfig({
       title: "Landing page",
       link: [{ rel: "icon", type: "image/*", href: "/favicon.ico" }],
     },
+    cdnURL: 'https://matespromo.com/mateadmin/lambo_ohmyspins/',
   },
   css: [
     // SCSS file in the project
