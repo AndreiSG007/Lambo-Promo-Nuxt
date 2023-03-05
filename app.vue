@@ -60,7 +60,7 @@
         <button class="main-button">{{ $t("playNow") }}</button>
       </a>
       <div>
-        <nuxt-img
+        <img
           src="/assets/Header_group_OMS.png"
           format="webp"
           alt=""
@@ -72,15 +72,15 @@
         <h2 class="steps-title">{{ $t("howToWIN") }}</h2>
         <div class="steps-container">
           <div class="step">
-            <nuxt-img src="/assets/1.svg" alt="" class="step-image" />
+            <img src="/assets/1.svg" alt="" class="step-image" />
             <h2>{{ $t("placeAtLeast") }}</h2>
           </div>
           <div class="step">
-            <nuxt-img src="/assets/2.svg" alt="" class="step-image" />
+            <img src="/assets/2.svg" alt="" class="step-image" />
             <h2>{{ $t("keepDoingThatUntil") }}</h2>
           </div>
           <div class="step">
-            <nuxt-img src="/assets/3.svg" alt="" class="step-image" />
+            <img src="/assets/3.svg" alt="" class="step-image" />
             <h2>{{ $t("hopOnThisAmazingLambo") }}</h2>
           </div>
         </div>
@@ -112,15 +112,15 @@
               class="pic swiper-container-1"
               @click="() => showImg(index)"
             >
-              <nuxt-img :src="src" format="webp" />
+              <img :src="src"/>
             </swiper-slide>
           </swiper>
           <div class="arrows-container">
             <button @click="controlledSwiper.slidePrev()">
-              <nuxt-img src="/assets/left-arrow.svg" />
+              <img src="/assets/left-arrow.svg" />
             </button>
             <button @click="controlledSwiper.slideNext()">
-              <nuxt-img src="/assets/right-arrow.svg" />
+              <img src="/assets/right-arrow.svg" />
             </button>
           </div>
         </div>
