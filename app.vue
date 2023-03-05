@@ -112,15 +112,15 @@
               class="pic swiper-container-1"
               @click="() => showImg(index)"
             >
-              <img :src="src"/>
+              <img :src="src" alt="image"/>
             </swiper-slide>
           </swiper>
           <div class="arrows-container">
             <button @click="controlledSwiper.slidePrev()">
-              <img src="/assets/left-arrow.svg" />
+              <img src="/assets/left-arrow.svg" alt="prev"/>
             </button>
             <button @click="controlledSwiper.slideNext()">
-              <img src="/assets/right-arrow.svg" />
+              <img src="/assets/right-arrow.svg" alt="next"/>
             </button>
           </div>
         </div>
@@ -217,16 +217,16 @@ export default defineComponent({
     const now = new Date().getTime();
     const newYear = new Date("April 5, 2023 15:37:25").getTime();
     const imgs = [
-      "/assets/poze/a0.jpg",
-      "/assets/poze/a1.jpg",
-      "/assets/poze/a2.jpg",
-      "/assets/poze/a3.jpg",
-      "/assets/poze/a4.jpg",
-      "/assets/poze/a5.jpg",
-      "/assets/poze/a6.jpg",
-      "/assets/poze/a7.jpg",
-      "/assets/poze/a8.jpg",
-      "/assets/poze/a9.jpg",
+      "./assets/poze/a0.jpg",
+      "./assets/poze/a1.jpg",
+      "./assets/poze/a2.jpg",
+      "./assets/poze/a3.jpg",
+      "./assets/poze/a4.jpg",
+      "./assets/poze/a5.jpg",
+      "./assets/poze/a6.jpg",
+      "./assets/poze/a7.jpg",
+      "./assets/poze/a8.jpg",
+      "./assets/poze/a9.jpg",
     ];
     const showImg = (index) => {
       indexRef.value = index;
