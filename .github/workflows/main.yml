@@ -24,5 +24,5 @@ jobs:
         server: ftp.mkaom.com
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        local-dir: /dist/
+        local-dir: .output/public/
         server-dir: /public_html/mateadmin/lambo_ohmyspins/
