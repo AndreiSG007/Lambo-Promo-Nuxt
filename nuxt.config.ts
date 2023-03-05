@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: "Landing page",
+      title: "Lambo Promo - Oh My Spins",
       link: [{ rel: "icon", type: "image/*", href: "/favicon.ico" }],
     },
     cdnURL: 'https://matespromo.com/mateadmin/lambo_ohmyspins/',
