@@ -1,7 +1,7 @@
 <template>
   <div class="main-container">
     <div class="main-wrapper">
-      <nuxt-img
+      <img
         src="/assets/OMS_logo.svg"
         alt=""
         class="main-logo"
