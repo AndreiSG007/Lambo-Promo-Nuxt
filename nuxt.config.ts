@@ -1,13 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  ssr: false,
   app: {
     head: {
       title: "Lambo Promo - Oh My Spins",
       link: [{ rel: "icon", type: "image/*", href: "/favicon.ico" }],
     },
-    baseURL: '/lambo_ohmyspins/',
-    cdnURL: 'https://matespromo.com/lambo_ohmyspins/',
+    baseURL: '/mateadmin/lambo_ohmyspins/',
+    cdnURL: 'https://matespromo.com/mateadmin/lambo_ohmyspins/',
   },
   css: [
     // SCSS file in the project
