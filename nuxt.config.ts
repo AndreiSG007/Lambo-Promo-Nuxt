@@ -1,9 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: false,
-  nitro: {
-    preset: 'service-worker'
-  },
   app: {
     head: {
       title: "Lambo Promo - Oh My Spins",
@@ -52,4 +49,7 @@ export default defineNuxtConfig({
     },
     display: "swap",
   },
+  generate: {
+    routes: ['/', '/de', '/it', '/pl', '/fi']
+  }
 });
