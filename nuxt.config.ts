@@ -5,7 +5,7 @@ export default defineNuxtConfig({
       title: "Lambo Promo - Oh My Spins",
       link: [{ rel: "icon", type: "image/*", href: "/favicon.ico" }],
     },
-    baseURL: '/mateadmin/lambo_ohmyspins/',
+    baseURL: '/mateadmin/ohmyspins/',
   },
   css: [
     // SCSS file in the project
