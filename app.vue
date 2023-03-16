@@ -217,16 +217,16 @@ export default defineComponent({
     const now = new Date().getTime();
     const newYear = new Date("April 5, 2023 15:37:25").getTime();
     const imgs = [
-      "/ohmyspins/assets/poze/a0.jpg",
-      "/ohmyspins/assets/poze/a1.jpg",
-      "/ohmyspins/assets/poze/a2.jpg",
-      "/ohmyspins/assets/poze/a3.jpg",
-      "/ohmyspins/assets/poze/a4.jpg",
-      "/ohmyspins/assets/poze/a5.jpg",
-      "/ohmyspins/assets/poze/a6.jpg",
-      "/ohmyspins/assets/poze/a7.jpg",
-      "/ohmyspins/assets/poze/a8.jpg",
-      "/ohmyspins/assets/poze/a9.jpg",
+      "/mateadmin/ohmyspins/assets/poze/a0.jpg",
+      "/mateadmin/ohmyspins/assets/poze/a1.jpg",
+      "/mateadmin/ohmyspins/assets/poze/a2.jpg",
+      "/mateadmin/ohmyspins/assets/poze/a3.jpg",
+      "/mateadmin/ohmyspins/assets/poze/a4.jpg",
+      "/mateadmin/ohmyspins/assets/poze/a5.jpg",
+      "/mateadmin/ohmyspins/assets/poze/a6.jpg",
+      "/mateadmin/ohmyspins/assets/poze/a7.jpg",
+      "/mateadmin/ohmyspins/assets/poze/a8.jpg",
+      "/mateadmin/ohmyspins/assets/poze/a9.jpg",
     ];
     const showImg = (index) => {
       indexRef.value = index;
