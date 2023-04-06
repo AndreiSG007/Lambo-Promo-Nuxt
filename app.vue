@@ -215,7 +215,7 @@ export default defineComponent({
     };
 
     const now = new Date().getTime();
-    const newYear = new Date("April 5, 2023 15:37:25").getTime();
+    const newYear = new Date("April 28, 2023 00:00:00").getTime();
     const imgs = [
       "/mateadmin/ohmyspins/assets/poze/a0.jpg",
       "/mateadmin/ohmyspins/assets/poze/a1.jpg",

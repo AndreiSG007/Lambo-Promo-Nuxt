@@ -5,9 +5,6 @@ declare module 'nitropack' {
     '/__nuxt_error': {
       'default': Awaited<ReturnType<typeof import('../../node_modules/nuxt/dist/core/runtime/nitro/renderer').default>>
     }
-    '/_ipx/**': {
-      'default': Awaited<ReturnType<typeof import('../../node_modules/@nuxt/image-edge/dist/runtime/ipx').default>>
-    }
   }
 }
 declare global {
