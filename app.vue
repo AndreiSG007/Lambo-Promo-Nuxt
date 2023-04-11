@@ -56,9 +56,9 @@
           </vue-countdown>
         </no-ssr>
       </div>
-      <a href="https://ohmyspins.com/" target="_blank">
+      <div @click="casinoRedirect">
         <button class="main-button">{{ $t("playNow") }}</button>
-      </a>
+      </div>
       <div>
         <img
           src="/assets/Header_group_OMS.png"
@@ -235,9 +235,15 @@ export default defineComponent({
 
     const onHide = () => (visibleRef.value = false);
 
-    const imgUrl = (path) => {
-      return new URL(path, import.meta.url).href;
+    const route = useRoute();
+    const casinoRedirect = () => {
+      let url = 'https://fezbet.com/en';
+      if (route.query.btag) {
+        url += `?btag=${route.query.btag}`;
+      }
+      window.open(url, '_blank');
     };
+
     return {
       visibleRef,
       indexRef,
@@ -253,6 +259,7 @@ export default defineComponent({
       setControlledSwiper,
       openModal,
       closeModal,
+      casinoRedirect,
     };
   },
 });
