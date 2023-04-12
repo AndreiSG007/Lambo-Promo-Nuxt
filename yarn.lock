@@ -5242,6 +5242,11 @@
   "resolved" "https://registry.npmjs.org/vue-easy-lightbox/-/vue-easy-lightbox-1.14.0.tgz"
   "version" "1.14.0"
 
+"vue-gtag-next@^1.14.0":
+  "integrity" "sha512-iJl+cOG2GU5NuxqzSSIpt03WVOvZqyKB9TOy7d55KiuvRklcnb2nlqxW5B/a3/sbIt7fla+XEkRyMCcoz0zAHw=="
+  "resolved" "https://registry.npmjs.org/vue-gtag-next/-/vue-gtag-next-1.14.0.tgz"
+  "version" "1.14.0"
+
 "vue-i18n-routing@^0.12.2":
   "integrity" "sha512-VzYUzbUJyPHUP74t973dN42/sJnZUzBwdcYX+TJgr9YHD08+9uouw5Ume2jHO2Pi8Nymu4cz/UiHWDPeMyc/bQ=="
   "resolved" "https://registry.npmjs.org/vue-i18n-routing/-/vue-i18n-routing-0.12.2.tgz"
@@ -5270,7 +5275,7 @@
   dependencies:
     "@vue/devtools-api" "^6.4.5"
 
-"vue@^2.6.14 || ^2.7.0 || ^3.2.0", "vue@^3.0.0", "vue@^3.0.0-0 || ^2.6.0", "vue@^3.2.0", "vue@^3.2.25", "vue@^3.2.47", "vue@>=2.7 || >=3", "vue@3", "vue@3.2.47":
+"vue@^2.6.14 || ^2.7.0 || ^3.2.0", "vue@^3.0.0", "vue@^3.0.0-0 || ^2.6.0", "vue@^3.0.0-rc.11", "vue@^3.2.0", "vue@^3.2.25", "vue@^3.2.47", "vue@>=2.7 || >=3", "vue@3", "vue@3.2.47":
   "integrity" "sha512-60188y/9Dc9WVrAZeUVSDxRQOZ+z+y5nO2ts9jWXSTkMvayiWxCWOWtBQoYjLeccfXkiiPZWAHcV+WTPhkqJHQ=="
   "resolved" "https://registry.npmjs.org/vue/-/vue-3.2.47.tgz"
   "version" "3.2.47"
