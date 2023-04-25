@@ -1,13 +1,7 @@
 <template>
   <div class="main-container">
     <div class="main-wrapper">
-      <img
-        src="/assets/OMS_logo.svg"
-        alt=""
-        class="main-logo"
-        w="190"
-        h="36"
-      />
+      <img src="/assets/OMS_logo.svg" alt="" class="main-logo" w="190" h="36" />
       <div class="main-texts">
         <h2>{{ $t("lastManStanding") }}</h2>
         <h1>{{ $t("lamborghiniHuracan") }}</h1>
@@ -112,15 +106,15 @@
               class="pic swiper-container-1"
               @click="() => showImg(index)"
             >
-              <img :src="src" alt="image"/>
+              <img :src="src" alt="image" />
             </swiper-slide>
           </swiper>
           <div class="arrows-container">
             <button @click="controlledSwiper.slidePrev()">
-              <img src="/assets/left-arrow.svg" alt="prev"/>
+              <img src="/assets/left-arrow.svg" alt="prev" />
             </button>
             <button @click="controlledSwiper.slideNext()">
-              <img src="/assets/right-arrow.svg" alt="next"/>
+              <img src="/assets/right-arrow.svg" alt="next" />
             </button>
           </div>
         </div>
@@ -237,11 +231,11 @@ export default defineComponent({
 
     const route = useRoute();
     const casinoRedirect = () => {
-      let url = 'https://fezbet.com/en';
+      let url = "https://ohmyspins.com/en";
       if (route.query.btag) {
         url += `?btag=${route.query.btag}`;
       }
-      window.open(url, '_blank');
+      window.open(url, "_blank");
     };
 
     return {

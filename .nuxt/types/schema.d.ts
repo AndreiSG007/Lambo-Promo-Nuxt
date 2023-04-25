@@ -17,6 +17,8 @@ declare module 'nuxt/schema' {
    },
   }
   interface PublicRuntimeConfig {
+   google_analytics_id: string,
 
+   production_mode: boolean,
   }
 }
