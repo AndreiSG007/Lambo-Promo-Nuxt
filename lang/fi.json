@@ -30,5 +30,7 @@
     "promotionStartsIn":"Kampanja alkaa",
     "casinolyIsOperated":"OhMySpins kasinon toiminnasta vastaa Buton Group ja se toimii Curacaolla myönnetyllä lisenssinumerolla 8048/JAZ",
     "weUnderstandThatAnything":"Ymmärrämme, että elämä on ailahtelevaista ja tarjoamme jokeripäivän – pelaaja voi jättää väliin yhden päivän (jokeripäivän) ja säilyttää asemansa pelissä.",
-    "thisEssentiallyMeans":" Käytännössä tämä tarkoittaa, että useamman kuin yhden panostuspäivän väliin jättäminen johtaa kampanjasta poistamiseen. Sinun ei tarvitse ilmoittaa jokeripäivääsi ennakkoon, eikä sen jo mentyä – me pidämme kirjaa kaikesta. "
+    "thisEssentiallyMeans":" Käytännössä tämä tarkoittaa, että useamman kuin yhden panostuspäivän väliin jättäminen johtaa kampanjasta poistamiseen. Sinun ei tarvitse ilmoittaa jokeripäivääsi ennakkoon, eikä sen jo mentyä – me pidämme kirjaa kaikesta. ",
+    "remainingPlayers": "Viimeiset 10 pelaajaa",
+    "playerNames": "Pelaajien nimet"
 }
